@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movieTracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-----nav bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="towatch.html">To Watch films</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      
+<div class="header">
+      <!--header-->
+      <i-header-->
+      <div class="container" >
+        New Released
+      </div>
+    </i-header-->
+    </div>
+
+
+
+      <!---image cards-->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Greatest of All Time</h5>
+              <p class="card-text">The Greatest of All Time (also marketed as GOAT) is a 2024 Indian Tamil-language action thriller film directed by Venkat Prabhu and produced by AGS </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" >
+            <img src="img/image2.jpg" class="card-img-top" alt="...">
+            <div class="card-body" >
+              <h5 class="card-title">Blitz</h5>
+              <p class="card-text">Blitz is a 2024 fictionalised war drama film written, produced and directed by Steve McQueen. The film stars Saoirse Ronan and Elliot Heffernan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/image3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Don't Move</h5>
+              <p class="card-text">Blitz is a 2024 fictionalised war drama film written, produced and directed by Steve McQueen. The film stars Saoirse Ronan and Elliot HeffernanDon't Move is a 2024 American thriller film starring Kelsey Asbille, Finn Wittrock, Moray Treadwell, and Daniel Francis. It was directed by Adam Schindler ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/image4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Outside</h5>
+              <p class="card-text">Outside is a 2024 Philippine post-apocalyptic drama horror film written and directed by Carlo Ledesma. It stars Sid Lucero, Beauty Gonzalez, Marco Masa, ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="img/image5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apocalypse Z: The Beginning of the End</h5>
+                <p class="card-text">Initial release: October 4, 2024 <br>
+                    Director: Carles Torrens <br>
+                    Cinematography: Edu Canet, Elías M. Félix <br>
+                    Costume design: Coro Mateo <br>
+                    Editor: Luis de la Madrid <br>
+                    Executive producer: Núria Valls <br>
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/image6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Do Patti</h5>
+                <p class="card-text">Do Patti ( transl. Two Cards) is a 2024 Indian Hindi-language mystery thriller film directed by Shashanka Chaturvedi and written by Kanika Dhillon.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <center style="text-align: center; margin-top: 20px;">
+        <h1 style="font-size: 4em; color: #02055a; font-weight: bold; background-color: aquamarine; font-family: Arial, sans-serif;">Dashboard</h1>
+    </center>
+    
+      <!--chart-->
+      <div class="chart-container">
+        <div class="chart">
+            <h2>Regional Grossing Data</h2>
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart">
+            <h2>Genre-wise Distribution Data</h2>
+            <canvas id="pieChart"></canvas>
+        </div>
+
+        <div class="chart">
+            <h2>Movie Production Trends</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+    </div>
+
+    <div class="movie-stats">
+        <div class="stat-box">
+            <h3>Yearly Production Trends</h3>
+            <p id="total-movies">0</p>
+        </div>
+        <div class="stat-box">
+            <h3>Highest Grossing Movie</h3>
+            <p id="highest-grossing">N/A</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

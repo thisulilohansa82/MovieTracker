@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        background-image: linear-gradient(to right top, #000000, #181112, #281b1e, #392429, #4b2e34, #5a3a41, #6a474e, #7a545c, #8a676f, #9b7b83, #ac9097, #bda5ab);
+        min-height: 100vh;
+    }
+     
+/* Navbar Styling */
+.navbar {
+   background-color: #36502c; /* Dark background for the navbar */
+   padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #ff5599; /* Light color for the brand */
+}
+
+.navbar .navbar-brand:hover {
+   color: #f39c12; /* Hover effect */
+}
+
+.navbar-nav .nav-item .nav-link {
+   color: #ff5599; /* Default link color */
+   font-size: 1.5em;
+   margin-right: 15px;
+   font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+   color: #f39c12; /* Hover effect for links */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+   color: #ff5599; /* Active link color */
+   font-weight: bold;
+}
+
+.navbar-toggler-icon {
+   background-color: #f4f4a6; /* Light toggler icon */
+}
+
+.form-control {
+   border-radius: 20px; /* Round corners for the search input */
+   padding: 5px 15px;
+}
+
+.btn-outline-success {
+   border-radius: 20px; /* Round button */
+   color: #2c3e50;
+   border: 2px solid #2c3e50;
+}
+
+.btn-outline-success:hover {
+   background-color: #2c3e50;
+   color: #ecf0f1;
+}
+
+@media (max-width: 991px) {
+   /* Mobile view adjustments */
+   .navbar {
+       padding: 15px;
+   }
+
+   .navbar-brand {
+       font-size: 1.2em;
+   }
+
+   .navbar-nav .nav-item .nav-link {
+       font-size: 1em;
+       margin-right: 10px;
+   }
+
+   .form-control {
+       width: 100%;
+   }
+
+   .btn-outline-success {
+       width: 100%;
+       margin-top: 10px;
+   }
+}
+
+
+/* Container Styling */
+.container {
+   width: 100%;
+   max-width: 600px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #f2f9d3;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Movie Form */
+#movieForm {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+#movieTitle, #movieGenre {
+   padding: 10px;
+   font-size: 1em;
+   border: 2px solid #f8e9b0;
+   border-radius: 5px;
+   width: 45%;
+   background-color: #bda5ab;
+}
+
+#movieTitle:focus, #movieGenre:focus {
+   border-color: #3498db;
+}
+
+button {
+   padding: 10px 20px;
+   font-size: 1em;
+   background-color: #3498db;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #2980b9;
+}
+
+/* Movie List */
+#movieList {
+   list-style-type: none;
+   padding: 0;
+}
+
+#movieList li {
+   background-color: #fff;
+   padding: 12px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#movieList li span {
+   font-size: 1.1em;
+   color: #333;
+}
+
+#movieList li button {
+   background-color: #e74c3c;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#movieList li button:hover {
+   background-color: #c0392b;
+}
